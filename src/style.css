@@ -1,0 +1,338 @@
+
+*, *::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button, [role="button"] {
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  &:focus {
+    outline: 0;
+  }
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  &:focus {
+    outline: 0;
+  }
+}
+
+::-moz-placeholder {
+  opacity: 1;
+}
+
+textarea {
+  
+  vertical-align: top;
+overflow: auto;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:focus {
+    outline: 0
+  }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/* .html {
+  background-image: url("./image/wall5.jpg");
+} */
+
+
+
+body{
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; /* Constrain content width */
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  background-color: #f4f4f4;
+ 
+  /* Centers the content vertically */
+  min-height: 100vh;
+  font-size: clamp(14px, 1.5vw, 20px);
+
+
+  scroll-behavior: smooth;
+
+
+  text-align: center;
+
+  
+}
+
+header {
+ 
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%; /* Full width */
+  max-width: 80%; /* Align with body margins */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+nav button {
+  
+  color:black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+#content{
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+
+
+  
+
+  }
+
+ 
+
+  #content div{
+    padding : 10px;
+    margin-bottom: 10px;
+  
+  
+    color:black;
+  
+  
+  
+    /* rounded corners... not sure if a thing anymore */
+    border-radius: clamp(30px, 3vw, 50px); /* Adjusts border radius dynamically */
+  
+  
+    overflow-wrap: break-word; /* Ensures long words wrap */
+    word-break: break-word;
+      
+      display: flex; /* Make the parent a flex container */
+      flex-direction: column; /* Stack items vertically */
+      justify-content: center; /* Center items vertically */
+      align-items: center; /* Center items horizontally */
+      text-align: center; /* Center text (optional) */
+
+
+      
+      
+      border-radius: 10px; /* Optional: Rounded corners on hover */
+  }
+
+
+
+  .home, .about, .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+
+
+
+
+h1{
+margin: 5px;
+padding: 10px;
+}
+h5{
+ margin:2px;
+  padding: 5px;
+}
+
+
+nav{
+
+  display: flex;
+  
+  justify-content: space-evenly ;
+  
+  align-content: center ;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  overflow-wrap: break-word; 
+
+}
+
+
+
+
+
+button{
+  margin: 5px;
+  padding:10px 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: cover; /* Crop instead of squishing */
+}
+
+
+p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .home, .about, .menu {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%; /* Full width for small screens */
+  }
+}
